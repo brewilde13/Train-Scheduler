@@ -20,7 +20,7 @@ $("#submit-button").on("click", function(event) {
   // Create variables that grab the user input from the form
   var trainName = $("#train-name").val().trim();
   var trainDestination = $("#train-destination").val().trim();
-  var trainTime = momemt($("#train-first-time").val().trim(), "hh:mm").format("X");
+  var trainTime = moment($("#train-first-time").val().trim(), "HH:mm").format("X");
   var trainFrequency = $("#train-frequency").val().trim();
 
   // Create a local "temporary" object that will hold all of the input train information
